@@ -1,0 +1,63 @@
+2018-06-28 12:08:07,128 p=7315 u=root |  [0;31mERROR! Invalid variable name in vars specified for Play: -my_softwares is not a valid variable name
+
+The error appears to have been in '/root/DevOps/Day4/Loops/loops.yml': line 5, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  vars:
+   -my_softwares:
+   ^ here
+[0m
+2018-06-28 12:08:27,662 p=7319 u=root |  PLAY [Demonstrates list and how to iterate loop user-defines variable] *********
+2018-06-28 12:08:27,668 p=7319 u=root |  TASK [setup] *******************************************************************
+2018-06-28 12:08:28,255 p=7319 u=root |  [0;32mok: [localhost][0m
+2018-06-28 12:08:28,258 p=7319 u=root |  TASK [Install Software tool] ***************************************************
+2018-06-28 12:08:28,450 p=7319 u=root |  [0;32mok: [localhost] => (item=vim) => {
+    "item": "vim", 
+    "msg": ""
+}[0m
+2018-06-28 12:08:28,451 p=7319 u=root |  [0;32mok: [localhost] => (item=tree) => {
+    "item": "tree", 
+    "msg": ""
+}[0m
+2018-06-28 12:08:28,451 p=7319 u=root |  [0;32mok: [localhost] => (item=default-jdk) => {
+    "item": "default-jdk", 
+    "msg": ""
+}[0m
+2018-06-28 12:08:28,452 p=7319 u=root |  [0;32mok: [localhost] => (item=maven) => {
+    "item": "maven", 
+    "msg": ""
+}[0m
+2018-06-28 12:08:28,453 p=7319 u=root |  [0;32mok: [localhost] => (item=ruby) => {
+    "item": "ruby", 
+    "msg": ""
+}[0m
+2018-06-28 12:08:28,454 p=7319 u=root |  PLAY RECAP *********************************************************************
+2018-06-28 12:08:28,454 p=7319 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-06-28 12:22:27,085 p=7444 u=root |  PLAY [Demonstrates Dictionary variable and its navigation] *********************
+2018-06-28 12:22:27,090 p=7444 u=root |  TASK [setup] *******************************************************************
+2018-06-28 12:22:27,482 p=7444 u=root |  [0;32mok: [localhost][0m
+2018-06-28 12:22:27,485 p=7444 u=root |  TASK [Print all contacts] ******************************************************
+2018-06-28 12:22:27,512 p=7444 u=root |  [0;32mok: [localhost] => (item={'value': {u'mobile': u'123-123-123', u'name': u'Nitesh N'}, 'key': u'Nitesh'}) => {
+    "item": {
+        "key": "Nitesh", 
+        "value": {
+            "mobile": "123-123-123", 
+            "name": "Nitesh N"
+        }
+    }, 
+    "msg": " mobile number of Nitesh is 123-123-123."
+}[0m
+2018-06-28 12:22:27,514 p=7444 u=root |  [0;32mok: [localhost] => (item={'value': {u'mobile': u'123-456-0000', u'name': u'Sriram abs'}, 'key': u'Sriram'}) => {
+    "item": {
+        "key": "Sriram", 
+        "value": {
+            "mobile": "123-456-0000", 
+            "name": "Sriram abs"
+        }
+    }, 
+    "msg": " mobile number of Sriram is 123-456-0000."
+}[0m
+2018-06-28 12:22:27,516 p=7444 u=root |  PLAY RECAP *********************************************************************
+2018-06-28 12:22:27,516 p=7444 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   

@@ -1,0 +1,16 @@
+---
+- name: Demonstrates list and how to iterate loop user-defines variable
+  hosts: localhost
+  vars:
+   - my_softwares:
+      - vim
+      - tree
+      - default-jdk
+      - maven
+      - ruby
+
+  tasks:
+   - name: Install Software tool
+     debug: msg= "Need to install {{item}}."
+     with_list: "{{my_softwares}}"
+...

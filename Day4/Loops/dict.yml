@@ -1,0 +1,17 @@
+---
+- name: Demonstrates Dictionary variable and its navigation
+  hosts: localhost
+  vars:
+    - contacts:
+         Sriram:
+            name: Sriram abs
+            mobile: 123-456-0000
+         Nitesh:
+            name: Nitesh N
+            mobile: 123-123-123
+    
+  tasks: 
+    - name: Print all contacts
+      debug: msg=" mobile number of {{item.key}} is {{item.value.mobile}}."
+      with_dict: "{{contacts}}"
+...

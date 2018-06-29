@@ -1,0 +1,16 @@
+---
+- name: Installs, configures, and Deploys Webpage - nginx webserver
+  hosts: all
+  vars_files: 
+    - custom_variables
+  
+  tasks:
+   - include: install.yml 
+   - include: configure_ubuntu.yml
+   - include: configure_centos.yml
+   - include: configure.yml
+   - include: deploy_custom.yml
+  handlers:
+    - name: restart webserver 
+      service: name=nginx state=restarted
+...

@@ -1,0 +1,6 @@
+
+- name: Configure Web Server for centos
+  copy: src=default.conf dest=/etc/nginx/conf.d/default.conf
+  when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+  notify:
+    -restart webserver

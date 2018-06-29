@@ -1,0 +1,46 @@
+2018-06-28 11:43:06,586 p=7027 u=root |  [0;33mcentos2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:43:06,589 p=7027 u=root |  [0;33mcentos1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:43:23,684 p=7043 u=root |  [0;33mubuntu2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:43:23,688 p=7043 u=root |  [0;33mcentos1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:43:23,689 p=7043 u=root |  [0;33mubuntu1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:43:23,695 p=7043 u=root |  [0;33mcentos2 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ERROR! SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue", 
+    "unreachable": true
+}[0m
+2018-06-28 11:45:14,981 p=7092 u=root |  [0;32mcentos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-28 11:45:14,983 p=7092 u=root |  [0;32mcentos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-28 11:45:15,017 p=7092 u=root |  [0;32mubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m
+2018-06-28 11:45:15,026 p=7092 u=root |  [0;32mubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}[0m

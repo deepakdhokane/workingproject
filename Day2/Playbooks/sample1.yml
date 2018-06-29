@@ -1,0 +1,15 @@
+---
+- name: This will demo vim installation
+  hosts: all
+  tasks:
+    - name: Install VIM editor
+      apt: name=vim state=latest update_cache=yes
+    - name: Install Tree utility
+      apt: name=tree state=latest update_cache=yes
+
+- name: Second Play
+  hosts: container1
+  tasks:
+    - name: This tasks playbook
+      debug: msg="Second Playbook - First task"
+...

@@ -1,0 +1,26 @@
+---
+- name: Installs, configures, and Deploys Webpage - nginx webserver
+  hosts: all
+  vars: 
+    - greeting_msg: DevOps
+    - automation_tool: Ansible
+    - provisioner_tool: Docker
+  tasks:
+    - name: Install nginx webserver
+      apt: name=nginx state=latest update_cache=yes
+
+    - name: Configure Web Server
+      copy: src=default dest=/etc/nginx/sites-available/default
+
+    - name: Restart Web server
+      service: name=nginx state=restarted
+
+    - name: Create webroot folder
+      shell: mkdir -p /var/html state=directory mode=755
+
+    - name: Deploy custome html
+      template: src=index.html.j2 dest=/var/html/index.html
+
+    - name: restart webserver
+      service: name=nginx state=restarted
+...
